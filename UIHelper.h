@@ -1,0 +1,14 @@
+#if !defined(AFX_UIHELPER_H__9EDC2690_C269_4195_B0CB_22F9F6834E5E__INCLUDED_)
+#define AFX_UIHELPER_H__9EDC2690_C269_4195_B0CB_22F9F6834E5E__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+void CenterWindow(HWND hWnd);
+void AddText(HWND hEditControl, LPCTSTR szNewStr);
+void AddTextW(HWND hEditControl, LPCWSTR szNewStr);
+
+
+
+#endif // !defined(AFX_UIHELPER_H__9EDC2690_C269_4195_B0CB_22F9F6834E5E__INCLUDED_)

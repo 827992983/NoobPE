@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NoobPE - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ui.res" /d "NDEBUG" "F:\MyProjects\NoobPE\ui.rc"" 
+Creating temporary file "C:\DOCUME~1\nixiang\LOCALS~1\Temp\RSPC20C.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/NoobPE.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\MyProjects\NoobPE\NoobPE.cpp"
+"F:\MyProjects\NoobPE\PE.cpp"
+"F:\MyProjects\NoobPE\ProcessHelper.cpp"
+"F:\MyProjects\NoobPE\UIHelper.cpp"
+"F:\MyProjects\NoobPE\UserMessage.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\nixiang\LOCALS~1\Temp\RSPC20C.tmp" 
+Creating temporary file "C:\DOCUME~1\nixiang\LOCALS~1\Temp\RSPC20D.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/NoobPE.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\MyProjects\NoobPE\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\nixiang\LOCALS~1\Temp\RSPC20D.tmp" 
+Creating temporary file "C:\DOCUME~1\nixiang\LOCALS~1\Temp\RSPC20E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/NoobPE.pdb" /machine:I386 /out:"Release/NoobPE.exe" 
+.\Release\NoobPE.obj
+.\Release\PE.obj
+.\Release\ProcessHelper.obj
+.\Release\StdAfx.obj
+.\Release\UIHelper.obj
+.\Release\UserMessage.obj
+.\Release\ui.res
+]
+Creating command line "link.exe @C:\DOCUME~1\nixiang\LOCALS~1\Temp\RSPC20E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+NoobPE.cpp
+PE.cpp
+ProcessHelper.cpp
+UIHelper.cpp
+UserMessage.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+NoobPE.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
