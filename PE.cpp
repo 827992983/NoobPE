@@ -490,7 +490,7 @@ VOID PrintImportTable(HWND hEdit, LPCTSTR szFile)
 			pThunkData++;
 		}
 		pImportTable = (PIMAGE_IMPORT_DESCRIPTOR)((DWORD)pImportTable + sizeof(IMAGE_IMPORT_DESCRIPTOR));
-		AddText(hEdit, "\r\n\r\n");
+		AddText(hEdit, TEXT("\r\n\r\n"));
 	}
 }
 
@@ -799,7 +799,7 @@ VOID PrintIATTable(HWND hEdit, LPCTSTR szFile)
 			}
 			pThunkData++;
 		}
-		pImportTable = (PIMAGE_IMPORT_DESCRIPTOR)((DWORD)pImportTable + sizeof(IMAGE_IMPORT_DESCRIPTOR));
-		AddText(hEdit, "\r\n\r\n");
+		pImportTable = (PIMAGE_IMPORT_DESCRIPTOR)((DWORD)pImportTable + sizeof(IMAGE_IMPORT_DESCRIPTOR));		
+		AddText(hEdit, TEXT("\r\n\r\n"));
 	}
 }

@@ -201,7 +201,7 @@ BOOL CALLBACK PEInfoDialogProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lPara
 			SendMessage(hDlg, WM_SETICON, ICON_BIG, (long)hIcon);
 			SendMessage(hDlg, WM_SETICON, ICON_SMALL, (long)hIcon);
 			// 获取文件名			
-			memset(szFile, 0, sizeof(TCHAR) * sizeof(MAX_PATH));
+			memset(szFile, 0, sizeof(TCHAR) * MAX_PATH);
 			lstrcpy(szFile, (LPCTSTR)lParam);			
 			// 设置标题
 			TCHAR szTitle[MAX_PATH];
@@ -295,7 +295,7 @@ BOOL CALLBACK DirDialogProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 			SendMessage(hDlg, WM_SETICON, ICON_BIG, (long)hIcon);
 			SendMessage(hDlg, WM_SETICON, ICON_SMALL, (long)hIcon);
 			// 获取文件名
-			memset(szFile, 0, sizeof(TCHAR) * sizeof(MAX_PATH));
+			memset(szFile, 0, sizeof(TCHAR) * MAX_PATH);
 			lstrcpy(szFile, (LPCTSTR)lParam);			
 			// 设置居中
 			CenterWindow(hDlg);
@@ -400,7 +400,7 @@ BOOL CALLBACK DirDetailDialogProc(HWND hDlg, UINT uMsg, WPARAM wParam, LPARAM lP
 			SendMessage(hDlg, WM_SETICON, ICON_BIG, (long)hIcon);
 			SendMessage(hDlg, WM_SETICON, ICON_SMALL, (long)hIcon);
 			// 获取文件名
-			memset(szFile, 0, sizeof(TCHAR) * sizeof(MAX_PATH));
+			memset(szFile, 0, sizeof(TCHAR) * MAX_PATH);
 			lstrcpy(szFile, (LPCTSTR)lParam);
 			// 设置居中
 			CenterWindow(hDlg);			
